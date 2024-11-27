@@ -8,6 +8,7 @@ import ru.employee_book.book_employee.excteption.EmployeeAlreadyAddedException;
 import ru.employee_book.book_employee.excteption.EmployeeNotFoundException;
 import ru.employee_book.book_employee.service.api.EmployeeService;
 
+import java.util.Collection;
 import java.util.Map;
 
 @RestController
@@ -30,7 +31,7 @@ public class EmployeeController {
     }
 
     @RequestMapping("/all")
-    public Map<Integer, Employee> all() {
+    public Collection<Employee> all() {
         return employeeService.findAllEmployees();
     }
 

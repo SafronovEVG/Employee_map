@@ -43,7 +43,8 @@ public class Employee {
         if (this == object) return true;
         if (object == null || getClass() != object.getClass()) return false;
         Employee employee = (Employee) object;
-        return Objects.equals(name, employee.name) && Objects.equals(surname, employee.surname);
+        return Objects.equals(name, employee.name) && Objects.equals(surname, employee.surname)
+                && Objects.equals(id, employee.id);
     }
 
     @Override
@@ -56,6 +57,7 @@ public class Employee {
         return "Employee{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
+                ", id='" + id + '\'' +
                 '}';
     }
 

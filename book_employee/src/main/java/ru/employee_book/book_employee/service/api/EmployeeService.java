@@ -2,7 +2,7 @@ package ru.employee_book.book_employee.service.api;
 
 import ru.employee_book.book_employee.domian.Employee;
 
-import java.util.Map;
+import java.util.Collection;
 
 public interface EmployeeService {
 
@@ -12,5 +12,5 @@ public interface EmployeeService {
 
     Employee findEmployee(Integer id);
 
-    Map<Integer, Employee> findAllEmployees();
+    Collection<Employee> findAllEmployees();
 }
